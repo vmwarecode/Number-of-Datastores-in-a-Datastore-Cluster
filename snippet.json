@@ -1,0 +1,10 @@
+{"a050b5ae-5e04-434c-a94a-ded7a782995d": {
+   "resourceKinds": [{
+      "resourceKindKey": "StoragePod",
+      "adapterKindKey": "VMWARE"
+   }],
+   "modificationTime": 1613898133673,
+   "name": "Number of Datastores",
+   "formula": "count(${adaptertype=VMWARE, objecttype=Datastore, attribute=capacity|available_space, depth=2})",
+   "description": "Number of Datastores in a Datastore cluster"
+}}
